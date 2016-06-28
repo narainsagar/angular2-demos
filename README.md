@@ -1,6 +1,8 @@
-# Angular2Demos
+# angular2-demos-app
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.6.
+Angular 2.0 demos for components, directives, routes, service, https, forms, etc.
+
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.8.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
