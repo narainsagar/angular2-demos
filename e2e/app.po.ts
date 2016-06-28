@@ -1,6 +1,6 @@
 export class Angular2DemosPage {
-  navigateTo() {
-    return browser.get('/');
+  navigateTo(route: string = '/') {
+    return browser.get(route);
   }
 
   getParagraphText() {
