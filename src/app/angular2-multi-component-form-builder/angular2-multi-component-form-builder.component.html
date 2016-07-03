@@ -1,0 +1,18 @@
+<div class="container">
+  <h3>{{title}}</h3>
+  
+  <ul class="nav nav-pills">
+    <li role="presentation" [class.active]="getLinkStyle('/multi-component-form-builder/step1')"><a id="step1-button" [routerLink]="['/multi-component-form-builder/step1']">Step 1</a></li>
+    <li role="presentation" [class.active]="getLinkStyle('/multi-component-form-builder/step2')"><a id="step2-button" [routerLink]="['/multi-component-form-builder/step2']">Step 2</a></li>
+  </ul>
+
+  <div class="row">
+  	<div class="col-md-9">
+  		<router-outlet></router-outlet>
+  	</div>
+  	<div class="col-md-3">
+  		<app-angular2-multi-component-form-builder-sidebar>
+      </app-angular2-multi-component-form-builder-sidebar>
+  	</div>
+  </div>
+</div>
