@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Angular2 Demos App</title>
-  <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Angular2 Demos</title>
+  <base href=".">
 
   <!-- Load icons -->
   <link rel="icon" type="image/x-icon" href="public/assets/icons/favicon.ico">
@@ -20,10 +20,8 @@
   {{/unless}}
 </head>
 <body>
-    <!-- Display the application -->
     <app-root>Loading...</app-root>
-    
-    <!-- Configure SystemJS -->
+
     {{#each scripts.polyfills}}
     <script src="{{.}}"></script>
     {{/each}}
@@ -32,6 +30,5 @@
         System.import('main');
       }).catch(console.error.bind(console));
     </script>
-
 </body>
 </html>
