@@ -1,0 +1,14 @@
+<h3>{{title}}</h3>
+<ul class="nav">
+	<li>
+		<p class="{{isValid('step1') ? 'text-success' : 'text-danger'}}" id="sidebar-step1-status">
+			step1 is {{isValid('step1') ? "" : "not"}} complete.
+		</p>
+	</li>
+
+	<li>
+		<p class="{{isValid('step2') ? 'text-success' : 'text-danger'}}" id="sidebar-step2-status">
+			step2 is {{isValid('step2') ? "" : "not"}} complete.
+		</p>
+	</li>
+</ul>

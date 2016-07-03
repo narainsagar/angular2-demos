@@ -29,10 +29,20 @@ const barrels: string[] = [
 
   // Thirdparty barrels.
   'rxjs',
+  'ng2-bootstrap',  
 
   // App specific barrels.
   'app',
-  'app/shared',
+  'app/about',
+  'app/demos',
+  'app/angular2-multi-component-form-builder',
+  'app/angular2-multi-component-form-builder/dump-data',
+  'app/angular2-multi-component-form-builder/+step1',
+  'app/angular2-multi-component-form-builder/+step2',
+  'app/angular2-multi-component-form-builder/sidebar',
+  'app/angular2-multi-component-form-builder/shared',
+  'app/angular2-multi-component-form-builder/shared/form-field',
+  'app/angular2-multi-component-form-builder/shared/form-field/shared',
   /** @cli-barrel */
 ];
 
@@ -48,6 +58,8 @@ declare var System: any;
 System.config({
   map: {
     '@angular': 'vendor/@angular',
+    'moment': 'vendor/moment/moment.js',
+    'ng2-bootstrap': 'vendor/ng2-bootstrap',
     'rxjs': 'vendor/rxjs',
     'main': 'main.js'
   },

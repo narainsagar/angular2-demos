@@ -1,3 +1,27 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+    <h1>
+      {{title}}
+    </h1>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li [class.active]="getLinkStyle('/about')">
+                    <a [routerLink]="['/about']" class="link">About</a>
+                </li>
+                
+                <li [class.active]="getLinkStyle('/multi-component-form-builder')">
+                	<a [routerLink]="['/multi-component-form-builder']" class="link">multi-component-form-builder</a>
+                </li>
+                
+                <li [class.active]="getLinkStyle('/demos')">
+                	<a [routerLink]="['/demos']" class="link">Demos</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+    <router-outlet name="home"></router-outlet>
+</div>
+<router-outlet></router-outlet>
