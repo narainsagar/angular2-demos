@@ -15,12 +15,12 @@ Verify that you are running at least node `v5.x.x` and npm `3.x.x` by running `$
 - Install [Node.js® and npm](https://nodejs.org/en/download/) if they are not already on your machine.
 
 - Run the below commands to install `bower` and `angular-cli`
-
-`$ npm install -g bower`
-`$ npm install -g angular-cli`
+```
+$ npm install -g bower
+$ npm install -g angular-cli
+```
 
 - [Optional] Upgrade your current `angular-cli` to the latest one:
-
 ```
 npm uninstall -g angular-cli
 npm cache clean
@@ -30,27 +30,28 @@ npm install -g angular-cli@latest
 ## [Project] Setup and Usage
 
 - Clone the project (codebase): 
-`$ cd <projects folder>`
-`$ git clone https://<your-username>@bitbucket.org/narainsagar/my-resume-generator.git`
 
-- Install project dependencies: 
-`$ npm install && bower install`
+```
+$ cd <projects folder>
+$ git clone https://<your-username>@bitbucket.org/narainsagar/my-resume-generator.git
+```
+
+- Install project dependencies: `$ npm install && bower install`
 
 - Build and Run: 
-`$ ng build` i.e., (optional)
-`$ ng serve`
 
-- Navigate to: 
-`http://localhost:4200/`
+```
+$ ng build` # i.e., (optional)
+$ ng serve
+```
 
-- For runing e2e tests:
-`$ ng e2e`
+- Navigate to: `http://localhost:4200/`
 
-- For runing unit tests:
-`$ ng test`
+- For runing e2e tests: `$ ng e2e`
 
-- For more `angular-cli` commands:
-`$ ng --help`
+- For runing unit tests: `$ ng test`
+
+- For more `angular-cli` commands: `$ ng --help`
 
 
 ## Installation e2e Tests (i.e., tools)
