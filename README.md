@@ -32,8 +32,8 @@ npm install -g angular-cli@latest
 - Clone the project (codebase): 
 
 ```
-$ cd <projects folder>
-$ git clone https://<your-username>@bitbucket.org/narainsagar/my-resume-generator.git
+$ cd <path/to/projects/folder/>
+$ git clone https://github.com/narainsagar/angular2-demos.git
 ```
 
 - Install project dependencies: `$ npm install && bower install`
